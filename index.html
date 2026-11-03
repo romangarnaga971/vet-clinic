@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="uk">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>LAPKA: ветеринарна клініка</title>
+  <meta name="description" content="LAPKA: ветеринарна клініка для котів, собак, кроликів і птахів. Працюємо цілодобово.">
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" href="css/style.css">
+  <script type="importmap">
+    { "imports": { "three": "./vendor/three/three.module.js" } }
+  </script>
+</head>
+<body>
+  <header class="nav">
+    <a class="nav__logo" href="#top">lapka</a>
+    <nav class="nav__links">
+      <a href="#pets" data-i18n="nav.pets"></a>
+      <a href="#prices" data-i18n="nav.prices"></a>
+      <a href="#book" data-i18n="nav.book"></a>
+    </nav>
+    <div class="nav__lang" role="group" aria-label="Language">
+      <button type="button" data-lang="uk">UA</button>
+      <button type="button" data-lang="en">EN</button>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="scene">
+      <div class="scene__pin">
+        <svg class="blob" viewBox="0 0 1000 1000" aria-hidden="true"><path fill="#e2604e"/></svg>
+        <h1 class="word" data-i18n="hero.word"></h1>
+
+        <svg class="doodle doodle--bone" viewBox="0 0 200 120" aria-hidden="true">
+          <path pathLength="1" d="M50 42c-6-22-36-18-36 4 0 12 10 16 16 15-6 2-14 10-10 22 6 18 32 12 34-6l72-14c6 16 32 14 34-4 2-12-8-18-14-18 8-2 14-12 8-22-10-16-34-6-32 10z"/>
+        </svg>
+        <svg class="doodle doodle--paws" viewBox="0 0 220 180" aria-hidden="true">
+          <g id="paw">
+            <path pathLength="1" d="M40 70c-14 0-24 14-20 26 4 10 14 6 20 6s16 4 20-6c4-12-6-26-20-26z"/>
+            <path pathLength="1" d="M18 62c-6 0-9-14-3-16s10 12 3 16zM33 52c-6 0-8-15-1-16s8 14 1 16zM49 52c-7-2-6-16 1-16s6 14-1 16zM63 63c-7-4-3-17 3-16s4 15-3 16z"/>
+          </g>
+          <g transform="translate(120 70) rotate(18)">
+            <path pathLength="1" d="M40 70c-14 0-24 14-20 26 4 10 14 6 20 6s16 4 20-6c4-12-6-26-20-26z"/>
+            <path pathLength="1" d="M18 62c-6 0-9-14-3-16s10 12 3 16zM33 52c-6 0-8-15-1-16s8 14 1 16zM49 52c-7-2-6-16 1-16s6 14-1 16zM63 63c-7-4-3-17 3-16s4 15-3 16z"/>
+          </g>
+        </svg>
+
+        <canvas class="stage" aria-hidden="true"></canvas>
+
+        <div class="intro">
+          <ul class="intro__facts">
+            <li data-i18n="hero.fact1"></li>
+            <li data-i18n="hero.fact2"></li>
+            <li data-i18n="hero.fact3"></li>
+          </ul>
+          <div class="intro__side">
+            <p data-i18n="hero.text"></p>
+            <a class="btn" href="#book" data-i18n="hero.cta"></a>
+          </div>
+        </div>
+
+        <article class="panel">
+          <h2 data-i18n="story.a.title"></h2>
+          <p data-i18n="story.a.text"></p>
+        </article>
+        <article class="panel">
+          <h2 data-i18n="story.b.title"></h2>
+          <p data-i18n="story.b.text"></p>
+        </article>
+        <article class="panel">
+          <h2 data-i18n="story.c.title"></h2>
+          <p data-i18n="story.c.text"></p>
+        </article>
+        <article class="panel">
+          <h2 data-i18n="story.d.title"></h2>
+          <p data-i18n="story.d.text"></p>
+        </article>
+
+        <div class="spots" aria-hidden="true">
+          <span class="spot" data-spot="ear" data-i18n="spot.ear"></span>
+          <span class="spot" data-spot="teeth" data-i18n="spot.teeth"></span>
+          <span class="spot" data-spot="heart" data-i18n="spot.heart"></span>
+          <span class="spot" data-spot="paw" data-i18n="spot.paw"></span>
+        </div>
+      </div>
+    </section>
+
+    <section class="pets" id="pets">
+      <h2 data-i18n="pets.title"></h2>
+      <div class="pets__list"></div>
+    </section>
+
+    <section class="prices" id="prices">
+      <div class="prices__head">
+        <h2 data-i18n="prices.title"></h2>
+        <img src="assets/img/L-06.webp" data-i18n-alt="prices.alt" loading="lazy">
+      </div>
+      <ul class="prices__list">
+        <li><span data-i18n="price.1.name"></span><b data-i18n="price.1.value"></b></li>
+        <li><span data-i18n="price.2.name"></span><b data-i18n="price.2.value"></b></li>
+        <li><span data-i18n="price.3.name"></span><b data-i18n="price.3.value"></b></li>
+        <li><span data-i18n="price.4.name"></span><b data-i18n="price.4.value"></b></li>
+        <li><span data-i18n="price.5.name"></span><b data-i18n="price.5.value"></b></li>
+        <li><span data-i18n="price.6.name"></span><b data-i18n="price.6.value"></b></li>
+      </ul>
+    </section>
+
+    <section class="place">
+      <img src="assets/img/L-07.webp" data-i18n-alt="place.alt" loading="lazy">
+    </section>
+
+    <section class="night">
+      <p class="night__big" data-i18n="night.big"></p>
+      <div>
+        <p data-i18n="night.text"></p>
+        <a class="night__phone" href="tel:+380000000000">+380 00 000 00 00</a>
+      </div>
+    </section>
+
+    <section class="doctors">
+      <h2 data-i18n="doctors.title"></h2>
+      <div class="doctors__list">
+        <figure class="doctor">
+          <div class="doctor__pic"><img src="assets/img/L-08.webp" data-i18n-alt="doc.1.name" loading="lazy"></div>
+          <figcaption><strong data-i18n="doc.1.name"></strong><span data-i18n="doc.1.role"></span></figcaption>
+        </figure>
+        <figure class="doctor">
+          <div class="doctor__pic"><img src="assets/img/L-09.webp" data-i18n-alt="doc.2.name" loading="lazy"></div>
+          <figcaption><strong data-i18n="doc.2.name"></strong><span data-i18n="doc.2.role"></span></figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="book" id="book">
+      <div>
+        <h2 data-i18n="book.title"></h2>
+        <p data-i18n="book.text"></p>
+        <img class="book__pup" src="assets/img/L-05.webp" data-i18n-alt="book.alt" loading="lazy">
+      </div>
+      <form class="form">
+        <fieldset class="chips">
+          <legend data-i18n="form.who"></legend>
+          <label><input type="radio" name="pet" value="dog" checked><span data-i18n="pet.dog.name"></span></label>
+          <label><input type="radio" name="pet" value="cat"><span data-i18n="pet.cat.name"></span></label>
+          <label><input type="radio" name="pet" value="rabbit"><span data-i18n="pet.rabbit.name"></span></label>
+          <label><input type="radio" name="pet" value="bird"><span data-i18n="pet.bird.name"></span></label>
+        </fieldset>
+        <label><span data-i18n="form.petName"></span><input name="petName" type="text" required></label>
+        <label><span data-i18n="form.phone"></span><input name="phone" type="tel" autocomplete="tel" required></label>
+        <button class="btn" type="submit" data-i18n="form.submit"></button>
+        <p class="form__status" role="status"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="foot">
+    <span data-i18n="foot.demo"></span>
+    <span>2026</span>
+  </footer>
+
+  <script src="vendor/gsap.min.js"></script>
+  <script src="vendor/ScrollTrigger.min.js"></script>
+  <script src="vendor/lenis.min.js"></script>
+  <script type="module" src="js/main.js"></script>
+</body>
+</html>

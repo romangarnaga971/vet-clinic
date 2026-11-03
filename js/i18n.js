@@ -1,0 +1,156 @@
+export const texts = {
+  uk: {
+    title: 'LAPKA: ветеринарна клініка',
+    'nav.pets': 'Кого лікуємо',
+    'nav.prices': 'Ціни',
+    'nav.book': 'Записатися',
+    'hero.word': 'лапка',
+    'hero.fact1': 'Працюємо 24/7',
+    'hero.fact2': '12 лікарів',
+    'hero.fact3': 'Власна лабораторія',
+    'hero.text': 'Лікуємо так, щоб улюбленець не боявся повертатися. Спокійно, без поспіху й із ласощами в кишені.',
+    'hero.cta': 'Записатися на прийом',
+    'story.a.title': 'Спочатку знайомимось',
+    'story.a.text': 'Перші хвилини прийому ми просто даємо звикнути: понюхати кабінет, взяти смаколик, познайомитися з лікарем.',
+    'story.b.title': 'Огляд від носа до хвоста',
+    'story.b.text': 'Перевіряємо не лише те, через що ви прийшли. Вуха, зуби, серце й суглоби часто розказують більше, ніж здається.',
+    'story.c.title': 'Якщо потрібна операція',
+    'story.c.text': 'Маємо власну операційну й анестезіолога. Здебільшого забрати улюбленця можна того ж дня. Комір теж дамо, хоч він і не в захваті.',
+    'story.d.title': 'А за сміливість ласощі',
+    'story.d.text': 'Після візиту напишемо, що робити вдома, і за тиждень спитаємо, як справи. А кістка за хоробрість входить у вартість.',
+    'spot.ear': 'Вуха',
+    'spot.teeth': 'Зуби',
+    'spot.heart': 'Серце',
+    'spot.paw': 'Суглоби',
+    'pets.title': 'Кого лікуємо',
+    'pet.dog.name': 'Собаки',
+    'pet.dog.text': 'Від першого щеплення до турботи про старшого пса.',
+    'pet.cat.name': 'Коти',
+    'pet.cat.text': 'Окремий тихий кабінет, де не пахне собаками.',
+    'pet.rabbit.name': 'Кролики',
+    'pet.rabbit.text': 'Зуби, шлунок і все, що в гризунів болить непомітно.',
+    'pet.bird.name': 'Птахи',
+    'pet.bird.text': 'Лікар-орнітолог приймає щовівторка й щочетверга.',
+    'prices.title': 'Ціни',
+    'price.1.name': 'Огляд лікаря',
+    'price.1.value': '450 ₴',
+    'price.2.name': 'Вакцинація з вакциною',
+    'price.2.value': '850 ₴',
+    'price.3.name': 'Аналіз крові',
+    'price.3.value': '620 ₴',
+    'price.4.name': 'УЗД',
+    'price.4.value': '900 ₴',
+    'price.5.name': 'Чистка зубів',
+    'price.5.value': '2 100 ₴',
+    'price.6.name': 'Стерилізація кота',
+    'price.6.value': '2 400 ₴',
+    'night.big': 'Уночі теж',
+    'night.text': 'Якщо вдома щось сталося, телефонуйте одразу. Черговий лікар підкаже, що робити, поки ви їдете.',
+    'doctors.title': 'Лікарі',
+    'doc.1.name': 'Марія Кравець',
+    'doc.1.role': 'Терапевтка, має трьох котів і терпіння на всіх.',
+    'doc.2.name': 'Данило Савчук',
+    'doc.2.role': 'Хірург, спеціалізується на собаках великих порід.',
+    'book.title': 'Запишіться на прийом',
+    'book.text': 'Залиште номер, і ми передзвонимо протягом 15 хвилин. Якщо вашому улюбленцю зле зараз, краще телефонуйте.',
+    'form.who': 'Хто у вас',
+    'form.petName': 'Як звати улюбленця',
+    'form.phone': 'Ваш телефон',
+    'form.submit': 'Надіслати заявку',
+    'form.sent': 'Це демо-шаблон, тому заявка нікуди не надіслана. На сайті клініки тут буде підтвердження.',
+    'foot.demo': 'Демо-шаблон. Клініка, лікарі, ціни й телефон вигадані, фото згенеровані ШІ.',
+    'prices.alt': 'Лікар оглядає спокійного бігля на столі',
+    'place.alt': 'Світла рецепція клініки з дерев’яною стійкою та рослинами',
+    'book.alt': 'Цуценя золотистого ретривера вистрибує вперед',
+  },
+  en: {
+    title: 'LAPKA: veterinary clinic',
+    'nav.pets': 'Who we treat',
+    'nav.prices': 'Prices',
+    'nav.book': 'Book',
+    'hero.word': 'lapka',
+    'hero.fact1': 'Open 24/7',
+    'hero.fact2': '12 vets',
+    'hero.fact3': 'Our own lab',
+    'hero.text': 'We treat pets so they aren’t scared to come back. Calmly, unhurried, with treats in our pockets.',
+    'hero.cta': 'Book a visit',
+    'story.a.title': 'First, we say hello',
+    'story.a.text': 'For the first few minutes we just let your pet settle: sniff the room, take a treat, meet the vet.',
+    'story.b.title': 'A check from nose to tail',
+    'story.b.text': 'We look at more than the reason you came. Ears, teeth, heart and joints often tell us more than you’d expect.',
+    'story.c.title': 'If surgery is needed',
+    'story.c.text': 'We have our own operating room and anaesthetist. Most pets go home the same day. The cone comes too, though they won’t love it.',
+    'story.d.title': 'And a treat for being brave',
+    'story.d.text': 'After the visit we write down what to do at home and check in a week later. The bravery bone is included.',
+    'spot.ear': 'Ears',
+    'spot.teeth': 'Teeth',
+    'spot.heart': 'Heart',
+    'spot.paw': 'Joints',
+    'pets.title': 'Who we treat',
+    'pet.dog.name': 'Dogs',
+    'pet.dog.text': 'From the first vaccine to caring for an older dog.',
+    'pet.cat.name': 'Cats',
+    'pet.cat.text': 'A separate quiet room that doesn’t smell of dogs.',
+    'pet.rabbit.name': 'Rabbits',
+    'pet.rabbit.text': 'Teeth, stomachs and all the things rodents hide well.',
+    'pet.bird.name': 'Birds',
+    'pet.bird.text': 'Our bird specialist sees patients on Tuesdays and Thursdays.',
+    'prices.title': 'Prices',
+    'price.1.name': 'Vet check-up',
+    'price.1.value': '$11',
+    'price.2.name': 'Vaccination, vaccine included',
+    'price.2.value': '$21',
+    'price.3.name': 'Blood test',
+    'price.3.value': '$15',
+    'price.4.name': 'Ultrasound',
+    'price.4.value': '$22',
+    'price.5.name': 'Dental cleaning',
+    'price.5.value': '$51',
+    'price.6.name': 'Cat spay',
+    'price.6.value': '$58',
+    'night.big': 'Nights too',
+    'night.text': 'If something happens at home, call right away. The vet on duty will tell you what to do on the way in.',
+    'doctors.title': 'Our vets',
+    'doc.1.name': 'Maria Kravets',
+    'doc.1.role': 'General vet, with three cats and patience for all of them.',
+    'doc.2.name': 'Danylo Savchuk',
+    'doc.2.role': 'Surgeon, specialising in large dog breeds.',
+    'book.title': 'Book a visit',
+    'book.text': 'Leave your number and we’ll call back within 15 minutes. If your pet is unwell right now, please call us instead.',
+    'form.who': 'Who do you have',
+    'form.petName': 'Your pet’s name',
+    'form.phone': 'Your phone',
+    'form.submit': 'Send request',
+    'form.sent': 'This is a demo template, so your request wasn’t sent anywhere. A clinic’s site would confirm it here.',
+    'foot.demo': 'Demo template. The clinic, vets, prices and phone number are fictional, the photos are AI-generated.',
+    'prices.alt': 'A vet examining a calm beagle on the table',
+    'place.alt': 'A bright clinic reception with a wooden desk and plants',
+    'book.alt': 'A golden retriever puppy leaping forward',
+  },
+};
+
+function savedLang() {
+  try { return localStorage.getItem('lang'); } catch { return null; }
+}
+
+export function setLang(lang) {
+  const dict = texts[lang];
+  document.documentElement.lang = lang;
+  document.title = dict.title;
+  document.querySelectorAll('[data-i18n]').forEach((el) => {
+    el.textContent = dict[el.dataset.i18n];
+  });
+  document.querySelectorAll('[data-i18n-alt]').forEach((el) => {
+    el.alt = dict[el.dataset.i18nAlt];
+  });
+  document.querySelectorAll('[data-lang]').forEach((btn) => {
+    btn.setAttribute('aria-pressed', String(btn.dataset.lang === lang));
+  });
+  try { localStorage.setItem('lang', lang); } catch { /* private mode */ }
+}
+
+export function initialLang() {
+  const saved = savedLang();
+  if (saved && texts[saved]) return saved;
+  return navigator.language.toLowerCase().startsWith('uk') ? 'uk' : 'en';
+}
